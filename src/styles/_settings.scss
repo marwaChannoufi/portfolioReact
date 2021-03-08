@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&family=Josefin+Sans:wght@100&family=Nova+Round&display=swap');
+
+$font-1:'Nova Round', cursive;
+$font-2:'Dosis', sans-serif;
+$font-3:'Josefin Sans', serif;
+
+$color-1:#353333;
+$color-2:#438dfd;
+$color-3:#6163fd;
+$color-4:#97d5f8;
+$color-5:#586579;
+$white:#ddd;
+$black:#333;
+
+$borderRudius:25px;
+$shadow: 0 10px 15px #e333;
+$min-height:95vh;
+
+@mixin verticalCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+body{
+    margin: 1rem auto;
+    max-width: 1200px;
+    font-family: $font-1;
+    color: $black;
+}
+li{
+    list-style: none;
+
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: $black;
+}
+a:visited{
+    color: $black
+}
+.home, .competences, .certification, .contact, .projects{
+    display: flex;
+    @media screen and (max-width: 850px) {
+        display: block !important;
+    }
+}
+.homeContent, .competencesContent, .certificationContent, .contactContent, .projectsContent{
+    margin-left: .4rem;
+    @media screen and (max-width: 850px) {
+        display: block !important;
+    }
+}
